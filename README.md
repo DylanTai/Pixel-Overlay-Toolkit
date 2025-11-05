@@ -10,7 +10,7 @@ This project lets you add pixel overlays to a sprite by applying coordinates sto
 ```bash
 python add_pixels.py <base_image> <pixels.txt> <output_image>
 ```
-Provide your own base image and pixel instruction file. The script loads the base sprite, applies every pixel described in the text file, and saves the result as the output image you specify.
+Provide your own base image and pair it with the included `rose_pixels.txt` (or your own instruction file). The script loads the base sprite, applies every pixel described in the text file, and saves the result as the output image you specify.
 
 ### Pixel Instruction Format
 Each non-empty, non-comment line in `rose_pixels.txt` must follow:
@@ -26,3 +26,4 @@ Lines starting with `#` or blank lines are ignored. The file is UTF-8 encoded so
 
 ### Provided Files
 - `add_pixels.py`: Python helper that applies the overlay.
+- `rose_pixels.txt`: Sample pixel overlay you can use out of the box.
